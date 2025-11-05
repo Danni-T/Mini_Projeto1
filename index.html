@@ -6,7 +6,7 @@
     <title>Notas Rápidas</title>
     <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/Nota.js"></script>
+    <script type="text/javascript" src="js/Nota.js"></script>
 </head>
 <body>
     <div class="container">
@@ -15,10 +15,13 @@
         <input type="text" id="nota">
         <button onclick="nota()">Adicionar</button><br><br>
 
+        <!-- Botões para definir a urgência da nota -->
         <input type="button" value="Urgente" onclick="urgencia(true)">
         <input type="button" value="Não Urgente" onclick="urgencia(false)">
         <br><br>
 
+
+        <!-- Área para exibir notas urgentes (oculta) -->
         <div id="urgente" class="bloco" style="display:none;">
             <h3>Urgentes</h3>
         </div>

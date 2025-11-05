@@ -9,8 +9,8 @@ body {
   text-align: center;
   margin: 20px;
   padding: 40px;
-  display: flex;
-  justify-content: center;
+  display:flex;
+  justify-content:center;
   align-items: center;
   color: #000000;
 }
@@ -37,7 +37,7 @@ body::before {
 }
 /* Área principal (container)*/
 .container {
-  background: rgb(201, 255, 204);
+  background: rgb(239, 228, 243);
   width: 600px;
   margin: 40px auto;
   padding: 20px;
@@ -51,7 +51,7 @@ input[type="text"] {
 }
 /*Estilo dos botões*/
 button, input[type="button"] {
-  background-color: #fab5e0;
+  background-color: #eeb5fa;
   color: black;
   padding: 10px 16px;
   margin: 5px;
@@ -102,7 +102,7 @@ button, input[type="button"] {
 }
 /* Botão Excluir tudo*/
 .excluir {
-  background-color: #56ce56;
+  background-color: #a4f3a4;
   color: black;
   border: none;
   border-radius: 5px;
