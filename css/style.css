@@ -1,0 +1,109 @@
+* { /*Fonte do projeto todo*/
+  font-family: "Handlee", cursive;
+  font-weight: 400; 
+  font-style: normal;
+}
+/*Estilo da página*/
+body {
+  background-color: #f4e9ff;
+  text-align: center;
+  margin: 20px;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+}
+/*Estilo do titulo*/
+h1 {
+  font-size: 40px;  
+  font-weight: bold; 
+  color: #000000;   
+  text-align: center;
+}
+/*Imagem e ajustes*/
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('imagens/imagem.png');
+  background-size: 100% 100%;   
+  background-repeat: no-repeat; 
+  background-position: center;  
+  z-index: -1;
+}
+/* Área principal (container)*/
+.container {
+  background: rgb(201, 255, 204);
+  width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 20px;
+}
+/* Campo de texto */
+input[type="text"] {
+  width: 70%;
+  padding: 8px;
+  font-size: 18px; 
+}
+/*Estilo dos botões*/
+button, input[type="button"] {
+  background-color: #fab5e0;
+  color: black;
+  padding: 10px 16px;
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px; 
+  cursor: pointer;
+}
+
+/* Blocos onde as notas são exibidas*/
+.bloco {
+  width: 90%;
+  margin: 15px auto;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: left;
+}
+/*Bloco Urgentes*/
+#urgente {
+  border: 3px solid red;
+  background-color: #fde3ed;
+}
+/*Bloco Não Urgentes*/
+#naoUrgente {
+  border: 3px solid yellow;
+  background-color: #f7f7d0;
+}
+/* Cada nota individual*/
+.nota {
+  margin: 5px 0;
+  padding: 5px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 0 3px gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Estilo do botão “X” de remover*/
+.nota button {
+  background-color: #e67b83;
+  color: white;
+  padding: 5px 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+/* Botão Excluir tudo*/
+.excluir {
+  background-color: #56ce56;
+  color: black;
+  border: none;
+  border-radius: 5px;
+}
